@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+$primary : #1b1f22;
+$secondary : #212529;
+$text-color : whitesmoke;
+$text-hover : #ff4e49;
+
+
+body {
+    // font-family: 'Fredoka', sans-serif;
+    background-color: #212529;
+    font-family: 'Poppins', sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

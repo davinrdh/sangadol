@@ -1,0 +1,133 @@
+<div class="container">
+
+    <!-- <table class="table mx-auto mt-5">
+        <tbody>
+            <tr>
+                <td>
+                    28 Mei 2023
+                </td>
+                <td class="event">
+                    Hikari No Isekai
+                </td>
+                <td>
+                    <span class="detail">
+                        <button class="btn btn-primary">
+                            <a href="https://instagram.com/hikarinoisekai/" target="_blank">Detail Event</a>
+                        </button>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="date">
+                    3 Juni 2023
+                </td>
+                <td class="event">
+                    Nipponations
+                </td>
+                <td class="detail">
+                    <button class="btn btn-primary">
+                        <a href="https://instagram.com/nipponations/" target="_blank">Detail Event</a>
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    18 Juni 2023
+                </td>
+                <td class="event">
+                    Shiawase No Sekai
+                </td>
+                <td>
+                    <span class="detail">
+                        <button class="btn btn-primary">
+                            <a href="https://instagram.com/shiawasenosekai/" target="_blank">Detail Event</a>
+                        </button>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    18 Juni 2023
+                </td>
+                <td class="event">
+                    Natsuko Fest
+                </td>
+                <td>
+                    <span class="detail">
+                        <button class="btn btn-primary">
+                            <a href="https://instagram.com/natsukofest/" target="_blank">Detail Event</a>
+                        </button>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    25 Juni 2023
+                </td>
+                <td class="event">
+                    Aozora Fest
+                </td>
+                <td>
+                    <span class="detail">
+                        <button class="btn btn-primary">
+                            <a href="https://instagram.com/aozorafest/" target="_blank">Detail Event</a>
+                        </button>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    18 Agustus 2023
+                </td>
+                <td class="event">
+                    Bunka No Matsuri
+                </td>
+                <td>
+                    <span class="detail">
+                        <button class="btn btn-primary">
+                            <a href="https://instagram.com/bnmfestival/" target="_blank">Detail Event</a>
+                        </button>
+                    </span>
+                </td>
+            </tr>
+            <tr *ngFor="let event of event;">
+                <td>{{event.date}}</td>
+                <td class="event">
+                    {{event.name}}
+                </td>
+                <td>
+                    <span class="detail">
+                        <button class="btn btn-primary">
+                            <a href="https://instagram.com/bnmfestival/" target="_blank">Detail Event</a>
+                        </button>
+                    </span>
+                </td>
+            </tr>
+
+        </tbody>
+
+
+    </table> -->
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let a of event;">
+            <th scope="row">{{a.id}}</th>
+            <td>{{a.date}}</td>
+            <td>{{a.name}}</td>
+            <td>{{a.place}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+</div>

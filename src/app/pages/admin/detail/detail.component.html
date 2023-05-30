@@ -1,0 +1,19 @@
+<div class="container">
+    <table class="table mx-auto mt-5">
+        <tbody *ngFor="let a of event;">
+            <tr>
+                <td class="date">{{a.date}}</td>
+                <td class="event">{{a.name}}</td>
+                <td class="detail">
+                    <span>
+                        <button class="btn btn-primary" id="detail" routerLink="detail/{{a.id}}">
+                            <!-- <a href={{a.url}} target="_blank">Detail Event</a> -->
+                            Detail
+                        </button>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

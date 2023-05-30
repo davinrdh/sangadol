@@ -1,0 +1,52 @@
+<div class="container">
+    <div>
+        <button type="button" class="btn btn-primary btn-modal mt-5" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Add Event
+        </button>
+    </div>
+    <table class="table mx-auto mt-2">
+        <tbody *ngFor="let a of event;">
+            <tr>
+                <td class="date">{{a.date}}</td>
+                <td class="event">{{a.name}}</td>
+                <td class="detail">
+                    <span>
+                        <button class="btn btn-primary" id="detail" (click)="deleteData(a.id)">
+                            Delete
+                        </button>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form (ngSubmit)="insertData()">
+                    <label for="exampleInputEmail1" class="form-label">Tanggal</label>
+                    <input type="text" class="form-control" name="firstName" [(ngModel)]="form.date">
+                    <label for="exampleInputEmail1" class="form-label">Nama Event</label>
+                    <input type="text" class="form-control" name="username" [(ngModel)]="form.name">
+                    <label for="exampleInputEmail1" class="form-label">Url Instagram</label>
+                    <input type="text" class="form-control" value="https://instagram.com/" [(ngModel)]="form.url">
+                    <button class="btn btn-secondary mt-4">Submit</button>
+                </form>
+            </div>
+            <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+        </div>
+    </div>
+</div>

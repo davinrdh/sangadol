@@ -1,0 +1,60 @@
+$primary : #1b1f22;
+$secondary : #212529;
+$text-color : whitesmoke;
+$text-hover : #ff4e49;
+
+.table {
+    background-color: $primary;
+    width: 60%;
+    border: 1px;
+    color: $text-color;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+.date {
+    width: 150px;
+}
+
+.event {
+    cursor: pointer;
+    text-align: center;
+}
+
+.detail {
+    width: 150px;
+}
+
+.btn-primary {
+    background-color: #212529;
+    border: #212529;
+}
+
+.btn:hover {
+    background-color: $primary;
+}
+
+
+@media screen and (max-width: 420px) {
+    table {
+        font-size: 12px;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    .btn {
+        // width: 100px;
+        // height: 50px;
+        font-size: 12px;
+    }
+    
+    .event {
+        width: 150px;
+    }
+
+}
